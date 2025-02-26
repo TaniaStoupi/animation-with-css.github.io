@@ -1,0 +1,43 @@
+
+@keyframes boxAnimation{
+
+    0%{
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        left: 0;
+        top: calc(100% - 150px);
+    }
+
+    50%{
+       top: calc(100% - 150px);
+       left: calc(100% - 150px);
+    }
+
+    75%{
+        top: 0;
+       left: calc(100% - 150px);
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
